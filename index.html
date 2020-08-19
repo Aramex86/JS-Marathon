@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+        
+		<div class="center">
+            <h2>Enter your phone</h2>
+            <div class="phone__wrapper">
+                <input type="text" id="phone" placeholder="+71234567850" />
+                <button onclick="formatPhone()" class="btn">Go!</button>
+                <div class="dispaly_phone"><h2></h2></div>
+            </div>
+		</div>
 
-    <script src="main.js"></script>
-</body>
+		<script src="main.js"></script>
+	</body>
 </html>
