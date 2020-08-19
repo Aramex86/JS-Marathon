@@ -1,4 +1,4 @@
-
+//homeWork 2
 
 const formatPhone = (phone) => {
     phone = document.getElementById('phone').value;
