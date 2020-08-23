@@ -4,10 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
-        
+      <!--   
 		<div class="center">
             <h2>Enter your phone</h2>
             <div class="phone__wrapper">
@@ -16,7 +17,83 @@
                 <div class="dispaly_phone"><h2></h2></div>
             </div>
 		</div>
+ -->
+ <div class="body">
+    <header>
+        <img class="logo"
+             title="Reset Game"
+             src="./assets/Pokemon_logo.png"
+             alt="Pokemon">
+    </header>
+    <div class="playground">
+        <div class="pokemon character">
+			<span class="winner"></span>
+            <span class="lvl">Lv. 1</span>
 
-		<script src="main.js"></script>
+            <img src="http://sify4321.000webhostapp.com/pikachu.png" class="sprite">
+
+            <div class="details">
+                <h2 class="name" id="name-character">
+                    Pikachu
+                </h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-character" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-character">100 / 100</span>
+                </div>
+			</div>
+			<div class="extra-combo">
+				<div class="bomb">
+					<button id="btn-bomb-character"><img src="./assets/bomb.png" alt="bomb"></button>
+				</div>
+				<div class="health">
+					<button class="btn-health"><img src="./assets/helth.png" alt="health"></button>
+				</div>
+			</div>
+        </div>
+
+        <div class="control">
+            <button class="button" id="btn-kick">
+                Thunder Jolt
+            </button>
+        </div>
+
+        <div class="pokemon enemy">
+			<span class="winner"></span>
+            <span class="lvl">Lv. 1</span>
+
+            <img src="http://sify4321.000webhostapp.com/charmander.png" class="sprite">
+
+            <div class="details">
+                <h2 class="name" id="name-enemy">
+                    Charmander
+                </h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-enemy" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-enemy">100 / 100</span>
+                </div>
+			</div>
+			<div class="extra-combo">
+				<div class="bomb">
+					<button id="btn-bomb-enemy"><img src="./assets/bomb.png" alt="bomb"></button>
+				</div>
+				<div class="health">
+					<button class="btn-health" ><img src="./assets/helth.png" alt="health"></button>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+<div class="catch_screen"></div>
+
+
+
+
+
+		<!-- <script src="main.js"></script> -->
+		<script src="js/pokemonGame.js"></script>
 	</body>
 </html>
